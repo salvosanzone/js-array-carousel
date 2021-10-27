@@ -1,0 +1,44 @@
+/*reset*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container .slider{
+  display: flex;
+  width: 80%;
+  max-width: 800px;
+
+  height: 292px;
+  background-color: cyan;
+
+}
+
+.slider-left{
+  width: 80%;
+  height: 100%;
+  background-color: darkcyan;
+}
+
+.slider-right{
+  width: 20%;
+  height: 100%;
+  background-color: darkgrey;
+}
+
+.box{
+  height: calc(100% /5);
+  background-color: coral;
+}
+
+img{
+  width: 100%;
+}
