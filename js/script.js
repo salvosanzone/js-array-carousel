@@ -24,13 +24,17 @@ console.log('item in base al contatore', items[contatore]);
 
 //uso l'evento click con la function
 prev.addEventListener('click',function(){
-  contatore--
-  if(contatore < 0) contatore = items.length -1;
-})
+  items[contatore].classList.remove('active');
+  contatore--;
+  if(contatore < 0) contatore = items.length - 1;
+  items[contatore].classList.add('active');
+});
 
-next.addEventListener('click', function(){
-  contatore++
-  if(contatore > items.length) contatore = 0;
-})
+next.addEventListener('click',function(){
+  items[contatore].classList.remove('active');
+  contatore++;
+  if(contatore > items.length - 1) contatore = 0;
+  items[contatore].classList.add('active');
+});
 
 
