@@ -28,13 +28,26 @@
 }
 
 .item{
+  position: relative;
   display: none;
 }
 
 .item.active{
   display: block;
 }
+.city, 
+.info{
+  position: absolute;
+  right:20px;
+}
 
+.city{
+  bottom: 25px;
+  right: 115px;
+}
+.info{
+  bottom: 15px;
+}
 .slider-right {
   position: relative;
   width: 20%;
