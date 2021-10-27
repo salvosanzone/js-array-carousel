@@ -38,3 +38,24 @@ next.addEventListener('click',function(){
 });
 
 
+//costruiamo lo slider-left con js
+//prima ho richiamato la classe item con le relative immagini adesso non ho piu nulla quindi definisco una array
+const images = ['img src="img/01.jpg','img src="img/02.jpg','img src="img/03.jpg','img src="img/04.jpg','img src="img/05.jpg']
+
+
+//aggancio e inizializzo la class dove andrò a costruire i miei item
+const sliderLeft = document.querySelector('.slider-left')
+
+//effetto un ciclo per costruire i 5 item
+for(let = 0; let<images.length; i++){
+  //costruisco un elemento div
+  const item = document.createElement('div');
+  //do una classe a questo div
+  item.className = 'item'
+  
+  if(i === contatore){
+    item.classList.add('active');
+  }
+  item.innerHTML = `<img src="${images[i]}" alt="">`;
+  sliderLeft.append(item);
+}
